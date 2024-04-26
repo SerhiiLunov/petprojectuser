@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pet-project-user-pg:
+    image: postgres:16.2
+    environment:
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=
+    ports:
+      - '5432:5432'
