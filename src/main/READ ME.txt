@@ -1,0 +1,12 @@
+
+* Before you begin, make sure you have Docker and Git installed on your computer.
+* Clone the repository from GitHub using the command git clone <repository URL>.
+* Open the project in your IDE and perform the necessary configurations (e.g., database configuration).
+* Make sure you have downloaded the PostgreSQL image in Docker that is used in the project.
+* Run the program by executing the command mvn spring-boot:run or run it from your IDE.
+
+Using the API:
+* To create a new user: send a POST request to /users/create with a JSON object containing the data of the new user.
+* To edit a user: send a POST request to /users/update with a JSON object containing the updated user data.
+* To retrieve a list of all users: send a POST request to /users/all.
+* To delete a user by their identifier: send a POST request to /users/delete/{id} with the user's identifier in the path.
